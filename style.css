@@ -1,0 +1,67 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@600&family=Gentium+Book+Basic:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@600&family=Gentium+Book+Basic:ital@1&family=Maitree:wght@300&display=swap');
+
+:root {
+  --bg-color: #373240;
+  --link-color: #A0B1CC;
+  --link-hover-color: #F0B74F;
+  --color-4: #F0D479;
+  --color-5: #DCDCE5;
+
+  --primary-font: 'Gentium Book Basic', serif;
+  --secondary-font: 'Fira Sans Condensed', sans-serif;
+  --third-font: 'Maitree', serif;
+  --main-text-color: #DCDCE5;
+  --font-size-header: 1.3em;
+  --font-size-text: 1.1em;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+p {
+  font-family: var(--third-font);
+  font-size: var(--font-size-text);
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 4rem;
+  margin-right: 5rem;
+  font-size: var(--font-size-header);
+}
+
+a {
+  font-family: var(--third-font);
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--main-text-color);
+}
+
+a:visited {
+  color: var(--main-text-color);
+}
+
+a:hover {
+  color: var(--link-color);
+}
+
+a:active {
+  color: var(--main-text-color);
+}
+
