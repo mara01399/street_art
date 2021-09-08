@@ -52,7 +52,7 @@ function artlist(data){
     copy.querySelector(
       "img"
     ).src = `"https://allmara.dk/kea/pic/images/${art.id}.jpg`;
-    copy.querySelector("img").alt = product.Name;
+    copy.querySelector("img").alt = art.Name;
   
     //     //grab parent
     const parent = document.querySelector("main");
