@@ -24,13 +24,30 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 1rem;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 p {
   font-family: var(--third-font);
   font-size: var(--font-size-text);
+  line-height: 1rem;
+}
+
+h2 {
+  font-family: var(--primary-font);
+}
+
+h3 {
+  font-family: var(--primary-font);
+}
+
+
+article {
+  margin: 2rem;
 }
 
 header ul {
@@ -44,6 +61,11 @@ header ul {
 }
 
 a {
+  font-family: var(--third-font);
+  text-decoration: underline;
+}
+
+header a {
   font-family: var(--third-font);
   text-decoration: none;
 }
@@ -69,9 +91,16 @@ a:active {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5rem;
+}
+
+img {
+  max-width: 100%;
 }
 
 footer {
+  padding: 0.7em;
+  font-size: 0.8rem;
   background-color: var(--link-color);
   color: var(--bg-color);
 }

@@ -40,11 +40,11 @@ function handleData(showart) {
     copy.querySelector(".place").textContent = `${art.Place}`;
     copy.querySelector(".artist").textContent = `${art.Artist}`;
     copy.querySelector("h2").textContent = art.Name;
-  /*  copy.querySelector(
+   copy.querySelector(
       "img"
-    ).src = `"https://allmara.dk/kea/pic/images/${art.Image}.jpg`; */
+    ).src = art.Image;
     copy.querySelector("img").alt = art.Name;
-    copy.querySelector("a").href = "big.html?id=" + art.id;
+    copy.querySelector("a").href = "big.html?id=" + art._id;
 
     // //     //grab parent
     const parent = document.querySelector("main");
